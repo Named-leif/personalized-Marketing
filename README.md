@@ -42,3 +42,11 @@ The **Manager_LLM** oversees the entire workflow, coordinating tasks among speci
    ```bash
    git clone https://github.com/USERNAME/Personalized-Content-Generation.git
    cd Personalized-Content-Generation
+
+2. Set up Python enviroment
+    ```bash
+   conda create --name content_env python=3.11.10
+   conda activate content_env
+
+
+
