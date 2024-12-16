@@ -1,4 +1,4 @@
-# personalized-Marketing
+# Personalized-Marketing
 Create a personalized marketing strategy with test and visual communication.
 
 # Personalized Content Generation
@@ -17,7 +17,7 @@ Der **Manager_LLM** überwacht den gesamten Ablauf und stellt sicher, dass alle 
 ---
 
 ## Workflow
-![Workflow-Diagramm](images/workflow_diagram.png)
+![Workflow-Diagramm](docs/framework.png)
 
 ### Beteiligte Agenten:
 1. **Product Researcher**  
