@@ -1,49 +1,44 @@
-# Personalized-Marketing
-Create a personalized marketing strategy with test and visual communication.
-
 # Personalized Content Generation
 
-## Beschreibung
-Das **Personalized Content Generation**-System automatisiert die Erstellung maßgeschneiderter Marketingstrategien durch ein mehrstufiges Agenten-Framework. Der Workflow wird durch spezialisierte Agenten koordiniert, die nahtlos zusammenarbeiten, um Analysen, Strategien und kreative Inhalte zu erstellen.
+## Description
+The **Personalized Content Generation** system automates the creation of customized marketing strategies through a multi-agent framework. 
 
-Der Prozess beginnt mit **user-provided Input**:
-- Produktkategorie
-- Produktinformationen
-- Zielkommunikationskanäle
-- Zusätzliche Notizen
+The process begins with **user-provided input**:
+- Product category
+- Product information
+- Target communication channels
+- Additional notes
 
-Der **Manager_LLM** überwacht den gesamten Ablauf und stellt sicher, dass alle Aufgaben der Agents koordiniert werden.
+The **Manager_LLM** oversees the entire workflow, coordinating tasks among specialized agents.
 
 ---
 
 ## Workflow
-![Workflow-Diagramm](docs/framework.png)
+![Workflow Diagram](docs/framework.png)
 
-### Beteiligte Agenten:
+### Agents and Tasks
 1. **Product Researcher**  
-   - **Aufgabe:** Verbrauchertrends, Zielgruppen und Kaufmotive identifizieren.
-   - **Tool:** SerperDev Tool
+   - Identify consumer trends, target audience, and product insights.  
+   - **Tool**: SerperDev Tool  
 
 2. **Data Analyst**  
-   - **Aufgabe:** Analyse von Feedback zur Ableitung von Erkenntnissen.
+   - Analyze consumer feedback and deliver insights.  
 
 3. **Strategy Agent**  
-   - **Aufgabe:** Zielgruppen segmentieren und Kanäle auswählen.  
-   - **Tool:** /
+   - Segment the target audience and recommend channels.
 
 4. **Copy Creator**  
-   - **Aufgabe:** Erstellung von Texten und DALL·E-Prompts.
+   - Create customized messages and DALL·E prompts.  
 
 5. **Content Creator**  
-   - **Aufgabe:** Erstellung visueller Inhalte für die Zielgruppenkommunikation.  
-   - **Tool:** DALL·E Tool
+   - Design visuals based on the communication strategy.  
+   - **Tool**: DALL·E Tool
 
 ---
 
 ## Installation
 
-1. **Repository klonen:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/USERNAME/Personalized-Content-Generation.git
    cd Personalized-Content-Generation
-
