@@ -1,0 +1,51 @@
+research_task:
+  agent: researcher
+  description: >
+    Research relevant data for {category} and {productinfo}. Emphasize findings related to the {channel} 
+    and explore directions indicated in the notes: "{notes}" to provide comprehensive insights.
+  expected_output: >
+    A detailed research report focusing on consumer demographics, emotional and practical drivers for purchasing {productinfo},
+    key trends, and preferences specific to the {channel}, accompanied by corroborative data from diverse sources.
+
+reporting_task:
+  agent: reporting_analyst
+  description: >
+    Analyze and refine the data collected by the Market Researcher, concentrating on extracting actionable insights
+    that align with the {channel} and integrating the special notes provided.
+  expected_output: >
+    A structured summary with key patterns and motivations behind consumer decisions, potential customer segments,
+    and actionable insights specifically tailored to the {channel} and notes.
+
+strategy_task:
+  agent: strategy_agent
+  description: >
+    Create audience segments and develop tailored communication strategies specific to the {channel}, informed by the notes provided.
+  expected_output: >
+    A strategic report containing detailed customer segments, messaging strategies tailored to each segment,
+    recommended communication channels, and KPIs for measuring the success of each strategy.
+
+copy_creation_task:
+  agent: copy_creator
+  description: >
+    Create communication materials for all identified audience segments based on the strategic communication plan,
+    tailored specifically for the {channel}, including crafting slogans and generating DALL·E prompts.
+  expected_output: >
+    A comprehensive set of communication assets, including segment-specific copy, tailored messaging frameworks,
+    slogans, and DALL·E prompt descriptions for content generation.
+
+content_creation_task:
+  agent: content_creator
+  description: >
+    Generate visual communication assets for each segment using the DALL·E prompts provided by the Copy Creator 
+    and ensure slogans are incorporated into the designs, suitable for {channel} applications. 
+  expected_output: >
+    A set of visuals that incorporate the slogans, optimized for ads, social media posts, and email campaigns,
+    with style recommendations and notes for varied channel contexts. 
+    check that:
+    - That an image is created for every segment created by the Copy Creator Agent.
+    - In every picture is a slogan and the sloagan in the same from the copy creator
+    - That the picture fits the context of the segment
+    - An image should be created for each segment
+    - The output must follow the pydantic schema strictly. There will be penalty if not followed. 
+    - Make sure that i can acsess the picureses.
+
