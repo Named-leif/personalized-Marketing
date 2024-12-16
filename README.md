@@ -43,10 +43,23 @@ The **Manager_LLM** oversees the entire workflow, coordinating tasks among speci
    git clone https://github.com/USERNAME/Personalized-Content-Generation.git
    cd Personalized-Content-Generation
 
-2. Set up Python enviroment
-    ```bash
+2. Set up Python enviroment:
+   ```bash
    conda create --name content_env python=3.11.10
    conda activate content_env
 
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Add API keys: Create a .env file in the root directory
+   ```bash
+   touch .env
+   OPENAI_API_KEY=your_openai_api_key
+   SERPER_API_KEY=your_serper_api_key
+   
+5. Run the project:
+   ```bash
+   python src/trend_content/main.py
 
 
