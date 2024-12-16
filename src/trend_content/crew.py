@@ -25,7 +25,7 @@ image_tool = DallETool(model="dall-e-3",
                        quality="standard",
                        n=1)
 
-#manager_llm = ChatOpenAI(model_name="gpt-4")
+manager_llm = ChatOpenAI(model_name="gpt-4")
 
 def download_image(image_url, output_path):
     try:
@@ -176,9 +176,9 @@ class TrendContent():
 			agents=self.agents, # Automatically created by the @agent decorator
 			tasks=self.tasks, # Automatically created by the @task decorator
 			planning=True,
-			#manager_llm=manager_llm,
-			#process=Process.hierarchical,
-			process=Process.sequential,
+			manager_llm=manager_llm,
+			process=Process.hierarchical,
+			#process=Process.sequential,
 			memory=True,
 			verbose=True,
 		)
